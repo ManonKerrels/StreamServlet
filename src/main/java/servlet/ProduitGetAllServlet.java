@@ -49,12 +49,13 @@ public class ProduitGetAllServlet extends HttpServlet {
         });
 
         out.print(
-            """
-            </ul>
+            
+            "</ul>"+
+            "<a href=\""+req.getContextPath()+"/produit/add\">vers ajout</a><br>" +
+            "<a href=\""+req.getContextPath()+"/produit/update\">vers modif</a>" +
                             
-            </body>
-            </html>
-            """
+            "</body>"+
+            "</html>"
         );
 
 

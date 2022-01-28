@@ -1,0 +1,8 @@
+Ajouter un lien près de la liste 
+permettant d'accéder à un formulaire 
+de modification.
+
+Ce formulaire permettra de modifier un produit
+existant ds la liste. En BackEnd la méthode 
+update(id, form) sera utilisé depuis le 
+servlet associé au formulaire.

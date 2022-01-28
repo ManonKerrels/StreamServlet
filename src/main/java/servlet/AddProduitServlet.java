@@ -17,7 +17,6 @@ public class AddProduitServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         PrintWriter out = resp.getWriter();
         out.print("<!doctype html>\n" +
                 "<html lang=\"en\">\n" +
@@ -72,10 +71,5 @@ public class AddProduitServlet extends HttpServlet {
             resp.setStatus(400);
             out.print("id ou prix invalide");
         }
-
-
-
-
-
     }
 }

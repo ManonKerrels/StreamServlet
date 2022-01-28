@@ -89,6 +89,11 @@ public class ProduitServiceImpl implements ProduitService{
 
     @Override
     public void update(int id, ProduitForm form) {
-        throw new RuntimeException("pas implémenté");
+
+        Produit toUpdate = getOne(id);
+        // ici serait la validation si bien codé
+        toUpdate.setNom( form.getNom() );
+        toUpdate.setPrix( form.getPrix() );
+
     }
 }
