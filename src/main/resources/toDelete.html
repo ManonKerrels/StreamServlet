@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Get all produit</title>
+    <title>Ajout de produit</title>
 </head>
 <body>
 
-    <h1>Liste des produits</h1>
-
-    <ul>
-        <li> nom - marque - prix$ </li>
-    </ul>
+    <form action="/servlets/produit/add" method="post">
+        <input type="number" name="id" placeholder="id"><br>
+        <input type="text" name="nom" placeholder="nom"><br>
+        <input type="text" name="marque" placeholder="marque"><br>
+        <input type="number" name="prix" placeholder="prix"><br>
+        <button type="submit">envoyer</button>
+    </form>
 
 </body>
 </html>

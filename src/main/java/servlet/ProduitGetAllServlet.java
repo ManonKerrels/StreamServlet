@@ -44,8 +44,16 @@ public class ProduitGetAllServlet extends HttpServlet {
                     <ul>
                 """);
 
-        // <li> nom - marque - prix$ </li>
-    
+        list.forEach(produit -> {
+            out.print("<li>");
+            out.print(produit.getNom());
+            out.print(' ');
+            out.print(produit.getMarque());
+            out.print(' ');
+            out.print(produit.getPrix());
+            out.println("$</li>");
+        });
+
         out.print(
             """
             </ul>
