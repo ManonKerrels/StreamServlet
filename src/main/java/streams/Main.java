@@ -1,9 +1,5 @@
 package streams;
 
-import streams.exo.Produit;
-import streams.exo.ProduitService;
-
-import javax.swing.text.html.Option;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

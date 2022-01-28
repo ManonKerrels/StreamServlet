@@ -1,5 +1,8 @@
 package streams.exo;
 
+import streams.exo.models.Produit;
+import streams.exo.models.ProduitForm;
+
 import java.util.Comparator;
 import java.util.List;
 
@@ -16,6 +19,13 @@ public interface ProduitService {
      */
     boolean insert(Produit toAdd);
     Produit delete(int id);
+
+    /**
+     * Modifie un produit existant
+     * @param id l'id du produit à modifier
+     * @param form les nouvelles données du produit
+     */
+    void update(int id, ProduitForm form);
 
     List<Produit> getAllSorted(Comparator<Produit> comparator);
     Produit getCheapest();

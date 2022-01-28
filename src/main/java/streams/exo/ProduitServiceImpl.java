@@ -1,7 +1,10 @@
 package streams.exo;
 
+import jdk.jshell.spi.ExecutionControl;
 import streams.exo.exceptions.NoProduitException;
 import streams.exo.exceptions.ProduitNotFoundException;
+import streams.exo.models.Produit;
+import streams.exo.models.ProduitForm;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -11,12 +14,18 @@ import java.util.stream.Collectors;
 
 public class ProduitServiceImpl implements ProduitService{
 
-    private final List<Produit> liste = new ArrayList<>();
-
-    public ProduitServiceImpl() {
+    // region PATTERN SINGLETON
+    private static ProduitServiceImpl _instance;
+    public static ProduitServiceImpl getInstance(){
+        return _instance == null ? _instance = new ProduitServiceImpl() : _instance;
+    }
+    private ProduitServiceImpl() {
         liste.add(new Produit(1, "patate", "les bons légumes", 2.5));
         liste.add(new Produit(2, "tomate", "les bons légumes", .99));
     }
+    // endregion
+
+    private final List<Produit> liste = new ArrayList<>();
 
     @Override
     public List<Produit> getAll() {
@@ -76,5 +85,10 @@ public class ProduitServiceImpl implements ProduitService{
         return liste.stream()
                 .filter( produit -> produit.getMarque().equals(brand) )
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public void update(int id, ProduitForm form) {
+        throw new RuntimeException("pas implémenté");
     }
 }

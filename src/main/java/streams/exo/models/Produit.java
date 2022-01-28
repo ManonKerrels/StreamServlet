@@ -1,4 +1,4 @@
-package streams.exo;
+package streams.exo.models;
 
 public class Produit{
 
