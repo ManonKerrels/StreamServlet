@@ -1,5 +1,13 @@
-<%@ include file="WEB-INF/head.jsp"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil</title>
+</head>
+<body>
 
-<a href="<%=request.getContextPath()%>/produit">vers produits</a>
-
-<%@ include file="WEB-INF/foot.jsp"%>
+    <h1> Bienvenue </h1>
+    <a href="<%= request.getContextPath() %>/produit">vers les produits</a><br>
+    <a href="<%= request.getContextPath() %>/jsp/magasins.jsp">vers les magasins</a>
+</body>
+</html>
