@@ -7,7 +7,7 @@
 
 <!--    <servlet>-->
 <!--        <servlet-name>produit-serv</servlet-name>-->
-<!--        <servlet-class>servlet.ProduitGetAllServlet</servlet-class>-->
+<!--        <servlet-class>servlet.produit.ProduitGetAllServlet</servlet-class>-->
 <!--    </servlet>-->
 
 <!--    <servlet-mapping>-->

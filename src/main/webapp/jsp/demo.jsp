@@ -32,7 +32,7 @@
     <h3>page</h3>
     <p>permet un certain nombre de config de la jsp</p>
 
-    <%@ page import="streams.exo.models.Produit" %>
+    <%@ page import="models.Produit" %>
     <%@ page buffer="8kb" autoFlush="true" %>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <%-- <%@ page extends="javax.servlet.http.HttpServlet" %> --%>

@@ -1,7 +1,7 @@
-package streams.exo;
+package service;
 
-import streams.exo.models.Produit;
-import streams.exo.models.ProduitForm;
+import models.Produit;
+import models.ProduitForm;
 
 import java.util.Comparator;
 import java.util.List;

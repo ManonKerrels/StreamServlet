@@ -1,4 +1,4 @@
-package streams.exo.exceptions;
+package exceptions;
 
 public class NoProduitException extends RuntimeException{
 

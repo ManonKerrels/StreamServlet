@@ -1,4 +1,4 @@
-package lambdas;
+package other.lambdas;
 
 public interface Donneur {
 

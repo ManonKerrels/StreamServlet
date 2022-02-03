@@ -1,4 +1,4 @@
-package streams.exo;
+package other.streams.exo;
 
 public class ExerciceStream {
 }

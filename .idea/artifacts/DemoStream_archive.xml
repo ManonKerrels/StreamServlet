@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/DemoStream_archive</output-path>
     <root id="archive" name="DemoStream archive.war">
       <element id="artifact" artifact-name="DemoStream" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/webapp" />
     </root>
   </artifact>
 </component>

@@ -1,8 +1,8 @@
-package servlet;
+package servlet.produit;
 
-import streams.exo.models.Produit;
-import streams.exo.ProduitService;
-import streams.exo.ProduitServiceImpl;
+import models.Produit;
+import service.ProduitService;
+import service.ProduitServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

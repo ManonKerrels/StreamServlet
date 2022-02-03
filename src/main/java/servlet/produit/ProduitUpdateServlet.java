@@ -1,9 +1,9 @@
-package servlet;
+package servlet.produit;
 
-import streams.exo.ProduitService;
-import streams.exo.ProduitServiceImpl;
-import streams.exo.exceptions.ProduitNotFoundException;
-import streams.exo.models.ProduitForm;
+import service.ProduitService;
+import service.ProduitServiceImpl;
+import exceptions.ProduitNotFoundException;
+import models.ProduitForm;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

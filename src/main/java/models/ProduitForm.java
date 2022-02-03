@@ -1,4 +1,4 @@
-package streams.exo.models;
+package models;
 
 public class ProduitForm {
 

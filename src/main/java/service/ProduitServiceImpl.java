@@ -1,10 +1,9 @@
-package streams.exo;
+package service;
 
-import jdk.jshell.spi.ExecutionControl;
-import streams.exo.exceptions.NoProduitException;
-import streams.exo.exceptions.ProduitNotFoundException;
-import streams.exo.models.Produit;
-import streams.exo.models.ProduitForm;
+import exceptions.NoProduitException;
+import exceptions.ProduitNotFoundException;
+import models.Produit;
+import models.ProduitForm;
 
 import java.util.ArrayList;
 import java.util.Comparator;
